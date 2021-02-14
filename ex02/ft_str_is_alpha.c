@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: msamoile <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/02/14 14:06:24 by msamoile          #+#    #+#             */
+/*   Updated: 2021/02/14 14:28:56 by msamoile         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 
 int	condition(char c)
@@ -6,7 +18,7 @@ int	condition(char c)
 		return (1);
 	if (c >= 'A' && c <= 'Z')
 		return (1);
-	return 0;
+	return (0);
 }
 
 int	ft_str_is_alpha(char *str)
@@ -16,16 +28,16 @@ int	ft_str_is_alpha(char *str)
 	i = 0;
 	while (str[i])
 	{
-		if (!condition(str[i])))
+		if (!condition(str[i]))
 			return (0);
 		i++;
 	}
 	return (1);
-
+}
 
 int main()
 {
-	char tab[] = "a";
+	char tab[] = "\0";
 	printf("%d\n", ft_str_is_alpha(tab));
 	return (0);
 }

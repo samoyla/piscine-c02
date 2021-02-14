@@ -1,41 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msamoile <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/14 16:12:15 by msamoile          #+#    #+#             */
-/*   Updated: 2021/02/14 16:12:25 by msamoile         ###   ########.fr       */
+/*   Created: 2021/02/11 08:12:12 by msamoile          #+#    #+#             */
+/*   Updated: 2021/02/14 14:05:38 by msamoile         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	condition(char c)
+char	*ft_strcpy(char *dest, char *src)
 {
-	if (c >= 97 && c <= 122)
-		return (0);
-	return (0);
-}
 
-int	ft_str_is_lowercase(char *str)
-{
 	int i;
 
 	i = 0;
-	while (str[i])
+	while (src[i] != '\0')
 	{
-		if (!(condition(str[i]))
-			return (0);
+		dest[i] = src[i];
 		i++;
 	}
-	return (1);
-}
-
-int	main()
-{
-	char tab[] = "kj";
-	printf("%d\n", ft_strs_is_lowercase(tab));
-	return (0);
+	dest[i] = '\0';
+	return (dest);
 }
