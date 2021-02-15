@@ -6,11 +6,11 @@
 /*   By: msamoile <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/14 16:11:49 by msamoile          #+#    #+#             */
-/*   Updated: 2021/02/14 16:12:03 by msamoile         ###   ########.fr       */
+/*   Updated: 2021/02/15 16:17:21 by msamoile         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include  <stdio.h>
+#include <stdio.h>
 
 int	condition(char c)
 {
@@ -26,7 +26,7 @@ int	ft_str_is_numeric(char *str)
 	i = 0;
 	while (str[i])
 	{
-		if(!(condition(str[i])))
+		if (!(condition(str[i])))
 			return (0);
 		i++;
 	}
@@ -35,7 +35,8 @@ int	ft_str_is_numeric(char *str)
 
 int	main()
 {
-	char tab[] = "\n";
+	char tab[] = "\0";
+
 	printf("%d\n", ft_str_is_numeric(tab));
 	return (0);
 }

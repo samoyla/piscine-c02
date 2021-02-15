@@ -6,15 +6,12 @@
 /*   By: msamoile <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/11 08:12:12 by msamoile          #+#    #+#             */
-/*   Updated: 2021/02/14 14:05:38 by msamoile         ###   ########.fr       */
+/*   Updated: 2021/02/15 16:02:19 by msamoile         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
 char	*ft_strcpy(char *dest, char *src)
 {
-
 	int i;
 
 	i = 0;

@@ -6,7 +6,7 @@
 /*   By: msamoile <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/14 16:12:15 by msamoile          #+#    #+#             */
-/*   Updated: 2021/02/14 16:12:25 by msamoile         ###   ########.fr       */
+/*   Updated: 2021/02/15 16:19:46 by msamoile         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	condition(char c)
 {
 	if (c >= 97 && c <= 122)
-		return (0);
+		return (1);
 	return (0);
 }
 
@@ -36,6 +36,7 @@ int	ft_str_is_lowercase(char *str)
 int	main()
 {
 	char tab[] = "kj";
+	
 	printf("%d\n", ft_strs_is_lowercase(tab));
 	return (0);
 }
