@@ -26,7 +26,7 @@ int	ft_str_is_lowercase(char *str)
 	i = 0;
 	while (str[i])
 	{
-		if (!(condition(str[i]))
+		if (!(condition(str[i])))
 			return (0);
 		i++;
 	}
@@ -37,6 +37,6 @@ int	main()
 {
 	char tab[] = "kj";
 	
-	printf("%d\n", ft_strs_is_lowercase(tab));
+	printf("%d\n", ft_str_is_lowercase(tab));
 	return (0);
 }
